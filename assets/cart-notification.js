@@ -1,4 +1,5 @@
 class CartNotification extends HTMLElement {
+
   constructor() {
     super();
 
@@ -78,3 +79,6 @@ class CartNotification extends HTMLElement {
 }
 
 customElements.define('cart-notification', CartNotification);
+
+console.log('callledd');
+
