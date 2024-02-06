@@ -115,8 +115,8 @@
 
 
                         <span class="th_bundle_discount_text"></span>
-                        {%- for p in item.properties -%}
-                          {%- if p.first contains 'th_bundle_' -%}{%- continue -%}{%- endif -%}
+                        {%- for property in item.properties -%}
+                          {%- if property.first contains 'th_bundle_' -%}{%- continue -%}{%- endif -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <div class="product-option">
